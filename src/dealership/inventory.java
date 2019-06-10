@@ -1,29 +1,52 @@
 package dealership;
-
 import java.util.*;
 
-public class inventory extends Vehicle {
+public class inventory{
 	
-	//something that counts the items in the array
-	//item declaration
+// private ArrayList <Vehicle> Inventory;
 	
+	//declaration of a private ArrayList
 	
+	private ArrayList <Vehicle> vInt;
+	
+	//public constructor for new ArrayList
+	
+	public inventory() {
+		this.vInt = new ArrayList<>();
+	}
+	
+	//public inventory adder 
+	
+	public ArrayList <Vehicle> makeInvent(){
+		
+		//defining setter values 
+		
+				Vehicle newVehicle = new Vehicle();
+				newVehicle.setType("Convertible");
+				newVehicle.setMake("Lionel Make");
+				newVehicle.setModel("Lionel Mode");
+				newVehicle.setYear("1990");
+				
+				newVehicle.getType();
+				newVehicle.getMake();
+				newVehicle.getModel();
+				newVehicle.getYear();	
+				
+				return vInt;
+		
+	}
 	
 
-		
-	//have to list TYPE(0), MAKE(1), MODEL(2), YEAR(3)
-	
-	
 	
 	 public static void main(String[] args)
 	    {  
-		 Vehicle newVehicle = new Vehicle();
 		 
-		 newVehicle.getType();
+		 ArrayList<String> newArray = new ArrayList<>();
+		 newArray.add("pull");
 		 
-		 ArrayList<Object> inventList = new ArrayList<>();
-		 inventList.add(newVehicle);
-		 System.out.println(inventList); 
+		 System.out.println(); 
+		 
+	
 	    }
 	 
 	
