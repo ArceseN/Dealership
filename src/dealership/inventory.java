@@ -2,51 +2,37 @@ package dealership;
 import java.util.*;
 
 public class inventory{
+		
+	//declaring a private array to utilize later
 	
-// private ArrayList <Vehicle> Inventory;
+	private static ArrayList<String> newArray = new ArrayList<>();
 	
-	//declaration of a private ArrayList
+	//public getter of an arraylist with the elements being vehicle values
 	
-	private ArrayList <String> vInt;
-	
-	//public constructor for new ArrayList
-	
-	public inventory() {
-		this.vInt = new ArrayList<>();
+	public static ArrayList<String> GetterArray()
+	{
+		
+		ArrayList<String> tempArray = new ArrayList<>();
+		
+		Vehicle newVehicle = new Vehicle();
+		newVehicle.setType("Convertible");
+		
+		tempArray.add(newVehicle.getType());
+		return tempArray;
+		
 	}
 	
-	//public inventory adder 
-	
-	public ArrayList<String> makeInvent(){
-		
-		//defining setter values 
-		
-				Vehicle newVehicle = new Vehicle();
-				newVehicle.setType("Convertible");
-				newVehicle.setMake("Lionel Make");
-				newVehicle.setModel("Lionel Mode");
-				newVehicle.setYear("1990");
-				
-				//using getters 
-				
-				vInt.add(newVehicle.getType());
-				newVehicle.getMake();
-				newVehicle.getModel();
-				newVehicle.getYear();	
-				
-				return vInt;
-		
+	//constructor setting 
+	public inventory () {
+		newArray = GetterArray();
 	}
 	
 
 	
 	 public static void main(String[] args)
 	    {  
-		 
-		inventory getInvent = new inventory();
-		 		 
-		 System.out.println(getInvent); 
-		 
+		 inventory newEntry = new inventory();
+		System.out.println(newEntry.toString()); 
 	
 	    }
 	 
