@@ -7,7 +7,7 @@ public class inventory{
 	
 	//declaration of a private ArrayList
 	
-	private ArrayList <Vehicle> vInt;
+	private ArrayList <String> vInt;
 	
 	//public constructor for new ArrayList
 	
@@ -17,7 +17,7 @@ public class inventory{
 	
 	//public inventory adder 
 	
-	public ArrayList <Vehicle> makeInvent(){
+	public ArrayList<String> makeInvent(){
 		
 		//defining setter values 
 		
@@ -27,7 +27,9 @@ public class inventory{
 				newVehicle.setModel("Lionel Mode");
 				newVehicle.setYear("1990");
 				
-				newVehicle.getType();
+				//using getters 
+				
+				vInt.add(newVehicle.getType());
 				newVehicle.getMake();
 				newVehicle.getModel();
 				newVehicle.getYear();	
@@ -41,10 +43,9 @@ public class inventory{
 	 public static void main(String[] args)
 	    {  
 		 
-		 ArrayList<String> newArray = new ArrayList<>();
-		 newArray.add("pull");
-		 
-		 System.out.println(); 
+		inventory getInvent = new inventory();
+		 		 
+		 System.out.println(getInvent); 
 		 
 	
 	    }
