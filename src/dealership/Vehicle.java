@@ -1,56 +1,93 @@
+
 package dealership;
-
+ 
+import java.util.*;
+ 
 public class Vehicle {
-	
-	private String type;
-	private String make;
-	private String model;
-	private String year;
-	
-	String setType(String setter) {
-		
-		return this.type = setter;
-		
-	}
-	
-	
-	String setMake(String setter) {
-		
-		return this.make = setter;
-		
-	}
-	
-	
-	String setModel(String setter) {
-		
-		return this.model = setter;
-		
-	}
-	
-	
-	String setYear(String setter) {
-		
-		return this.year = setter;
-		
-	}
-	
-	String getType() {
-		return this.type;
-	}
-	
-	String getMake() {
-		return this.make;
-	}
-	
-	String getModel() {
-		return this.model;
-	}
-	
-	String getYear() {
-		return this.year;
-	}
-	
-	
-	
-
-}
+     
+    private String type;
+    private String make;
+    private String model;
+    private String year; 
+    private String wholesaleCost;
+    private String retailCost;
+    private String vin;
+    
+     
+    public Vehicle () {
+         
+    }
+     
+    //setters
+     
+    public void setType (String setter) {
+        this.type =  setter;
+    }
+     
+    public void setMake (String setter) {
+        this.make =  setter;
+    }
+     
+    public void setModel (String setter) {
+        this.model =  setter;
+    }
+     
+    public void setYear (String setter) {
+        this.year =  setter;
+    }
+    
+    public void setWhole (String setter) {
+        this.wholesaleCost =  setter;
+    }
+    
+    public void setRetail (String setter) {
+        this.retailCost =  setter;
+    }
+    
+    public void setVim (String setter) {
+        this.vin =  setter;
+    }
+     
+    //getters
+     
+    public String getType() {
+        return this.type;
+    }
+     
+    public String getMake() {
+        return this.make;
+    }
+     
+    public String getModel() {
+        return this.model;
+    }
+     
+    public String getYear() {
+        return this.year;
+    }
+    
+    public String getWhole() {
+        return this.wholesaleCost;
+    }
+    
+    public String getRetail() {
+        return this.retailCost;
+    }
+    
+    public String getVin() {
+        return this.vin;
+    }
+    
+    //isLeasable function that returns a boolean value
+    public boolean isLeasable(boolean lease) {
+    	
+    	return lease;
+    	
+    }
+     
+     
+ 
+         
+         
+    }
+    
