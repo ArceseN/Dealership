@@ -60,7 +60,7 @@ public class inventory {
      //function to add to inventArray
       
      public static ArrayList<Object> allInventory() {
-          
+    	           
          inventArray.add(arrayMake("help","me", "im", "stuck", "oh", "no", "no"));
          inventArray.add(arrayMake("wait", "I", "got", "it", "oh", "no", "no"));
          inventArray.add(arrayMake("oh", "god","its", "midnight", "oh", "no", "no"));
