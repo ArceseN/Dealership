@@ -12,14 +12,14 @@ public class CustomerInformation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
  
-	 Scanner input = new Scanner(System.in);
+   Scanner input = new Scanner(System.in);
      
 	 System.out.println("Full Name: ");
-     String name = input.nextLine();
+    String name = input.nextLine();
      personalInfo.add(name);
-     
+   
      System.out.println("Address: ");
-     String address = input.nextLine();
+    String address = input.nextLine();
      personalInfo.add(address);
      
      System.out.println("Phone Number (xxx)xxx-xxxx: ");
@@ -30,11 +30,7 @@ public class CustomerInformation {
      String email = input.nextLine();
      personalInfo.add(email);
      
-	
-//     while (input.hasNextLine()) {
-//    	 personalInfo.add(input.nextLine());
-//    
-//     }
+
  System.out.println(personalInfo);
  
 	}
