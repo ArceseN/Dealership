@@ -12,6 +12,9 @@ public class Vehicle {
     private String wholesaleCost;
     private String retailCost;
     private String vin;
+    private String tow;
+    private String wheel;
+    private String w;
     
      
     public Vehicle () {
@@ -47,6 +50,14 @@ public class Vehicle {
     public void setVim (String setter) {
         this.vin =  setter;
     }
+    
+    public void setTow (String setter) {
+        this.tow =  setter;
+    }
+    
+    public void setWheel(String setter) {
+    	this.wheel = setter;
+    }
      
     //getters
      
@@ -79,11 +90,20 @@ public class Vehicle {
     }
     
     //isLeasable function that returns a boolean value
-    public boolean isLeasable(boolean lease) {
-    	
+    public Boolean isLeasable(Boolean lease) {
     	return lease;
     	
+    	
     }
+
+	public String getTow() {
+		// TODO Auto-generated method stub
+		return this.tow;
+	}
+	
+	public String getWheel() {
+		return this.wheel;
+	}
      
      
  
