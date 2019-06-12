@@ -1,7 +1,6 @@
 package customerProfile;
 
 
-
 public class Client {
 	
 	private String name;
@@ -10,6 +9,16 @@ public class Client {
 	private String email;
 	private String carChoice; 
 	
+	//constructor 
+	
+	public Client(String name, String address, String phone, String email, String carChoice) {
+		this.name = name;
+		this.address = address;
+		this.phone = phone;
+		this.email = email;
+		this.carChoice = carChoice;
+		
+	}
 	//setters
 	
 	public void setName(String setter) {
