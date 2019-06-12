@@ -7,7 +7,7 @@ public class inventory {
      
     //new ArrayList to use with vehicle class
      
-    public static ArrayList<Object> inventArray = new ArrayList<>(); 
+    private static ArrayList<Object> inventArray = new ArrayList<>(); 
      
      
     //big ArrayList function that returns a single vehicle array with details as elements
@@ -32,7 +32,7 @@ public class inventory {
         newVehicle1.setVim(setVin);
         newVehicle1.setTow("3,500lbs to 5000lbs towing capacity");
         newVehicle1.setWheel("FWD");
-        newVehicle1.setW();
+       // newVehicle1.setW();
          
         //getters
           
@@ -43,7 +43,7 @@ public class inventory {
         String whole = newVehicle1.getWhole();
         String retail = newVehicle1.getRetail();
         String vin = newVehicle1.getVin();
-        String lease = newVehicle1.isLeasable(true).toString();
+      //  String lease = newVehicle1.isLeasable(true).toString();
         String tow = newVehicle1.getTow();
         String wheel = newVehicle1.getWheel();
         
@@ -78,17 +78,19 @@ public class inventory {
       
      public static ArrayList<Object> allInventory() {
     	           
-         inventArray.add(arrayMake("Convertible","Chevrolet", "Camaro", "2019", "$24,295", "25,000", "5FNYF4H68CB073947"));
-         inventArray.add(arrayMake("Sedan", "Toyota", "Camry", "2019", "22,360", "24,095", "2HGES15883H938740"));
-         inventArray.add(arrayMake("Light Truck", "Honda","Ridgeline", "2019", "", "33,382", "no"));
+         inventArray.add(arrayMake("Convertible","Chevrolet", "Camaro", "2019", "$24,295", "25,000", "5FNYF4H68CB073947")+"\n");
+         inventArray.add(arrayMake("Sedan", "Toyota", "Camry", "2019", "22,360", "24,095", "2HGES15883H938740")+"\n");
+         inventArray.add(arrayMake("Light Truck", "Honda","Ridgeline", "2019", "$$$$$$", "33,382", "W04GW5EV5B1191212")+"\n");
  
          return inventArray;
      }
                
  
       public static void main(String[] args) {
+    	  
            
-          System.out.println(allInventory());
+          System.out.println(allInventory().toString().replace("[","").replace("]","").replace(", Sedan", "Sedan").replace(", Light", "Light").replace(", ", "; "));
+
            
           
            
