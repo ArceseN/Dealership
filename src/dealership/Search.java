@@ -6,26 +6,23 @@ public class Search {
 	
 	
 	public static ArrayList<Object>newArray = inventory.allInventory();
-	public static String query;
 	
+	public static void doSearch(String query) {
 	
-	public void doSearch() {
-	for (int i = 0; i < newArray.size(); i++) {
-		
-		
-	//	if (getItem.contains(query)) {
-			
-	//	}
-		
-	}
+	//iterator 
+	for (int i = 0; i < newArray.size(); i++) {		
+	if (newArray.get(i).toString().contains(query)) {
+		System.out.println(newArray.get(i).toString());
 	}
 	
-	
-	
+	}
+	}
+
     public static void main(String[] args) {
     	
     	
-    	System.out.println(newArray.get(1).toString().contains("Toyota"));
+    doSearch("Toyota");
+    
     	
     }	
 
