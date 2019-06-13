@@ -81,7 +81,7 @@ public class inventory {
          inventArray.add(arrayMake("Convertible","Chevrolet", "Camaro", "2019", "$24,295", "25,000", "5FNYF4H68CB073947")+"\n");
          inventArray.add(arrayMake("Sedan", "Toyota", "Camry", "2019", "22,360", "24,095", "2HGES15883H938740")+"\n");
          inventArray.add(arrayMake("Sedan", "Toyota", "Camry", "2010", "22,360", "24,095", "2HGES15883H938740")+"\n");
-         inventArray.add(arrayMake("Sedan", "Toyota", "Corolla", "2010", "22,360", "24,095", "2HGES15883H938740")+"\n");
+         inventArray.add(arrayMake("Sedan", "Toyota", "Corolla", "2018", "17,577", "18,600", "WVWBM7AJ6CW294146")+"\n");
          inventArray.add(arrayMake("Light Truck", "Honda","Ridgeline", "2019", "$$$$$$", "33,382", "W04GW5EV5B1191212")+"\n");
  
          return inventArray;

@@ -10,6 +10,8 @@ public class InventorySearch {
 	private ArrayList<Object> finalArray = new ArrayList<>();
 	private Object notFound = "not found";
 	
+	//newArray Setter
+	
 	public void setNewArray(ArrayList<Object> setter) {
 		this.newArray = setter;
 	}
@@ -34,10 +36,7 @@ public class InventorySearch {
 
 	}
 	
-	public ArrayList<Object> getFinalArray(){
-		return this.finalArray;
-		
-	}
+	//newArray getter
 	
 	public  ArrayList<Object> getNewArray(){
 		return newArray;
@@ -51,11 +50,13 @@ public class InventorySearch {
 
     public static void main(String[] args) {
     	
+    //initialize new instance and print search
+    	
     InventorySearch newSearch = new InventorySearch();
     System.out.println(newSearch.doSearch(newSearch.getNewArray(), "Sedan"));  
 
    
-   //searching through returned value
+   //TODO: searching through returned value
    
    
    
