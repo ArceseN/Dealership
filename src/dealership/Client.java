@@ -14,7 +14,7 @@ public class Client {
 	
 	//constructor 
 	
-	public Client(String name, String address, String phone, String email, String carChoice) {
+	public Client(String name, String address, String phone, String email, String carChoice, String deptChoice) {
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
@@ -30,8 +30,8 @@ public class Client {
 		
 	}
 
-	public void setName(String setter) {
-		this.name = setter; 
+	public void setName(String name) {
+		this.name = name; 
 	}
 	
 	public void setAddress(String address) {
