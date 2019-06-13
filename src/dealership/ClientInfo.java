@@ -28,6 +28,11 @@ public class ClientInfo {
     String email = input.nextLine();
     personalInfo.add(email);
     
+    //Lionel: Added Department choice for the client to pick from:
+    
+    System.out.println("Department Choice: ");
+    String department = input.nextLine();
+    personalInfo.add(department);
 	
 //    while (input.hasNextLine()) {
 //   	 personalInfo.add(input.nextLine());
