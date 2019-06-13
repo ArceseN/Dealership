@@ -38,6 +38,9 @@ public class CustomerInformation {
 			     String carChoice = input.nextLine();
 			     personalInfo.add(carChoice);
 			     
+			     System.out.println("What department does the client wish to see?");
+			     String deptChoice = input.nextLine();
+			     personalInfo.add(deptChoice);			     
 
 			 System.out.println(personalInfo);
 			 Client newPerson = new Client(personalInfo.get(0), personalInfo.get(1), personalInfo.get(2), personalInfo.get(3), personalInfo.get(4));
