@@ -25,6 +25,11 @@ public class Client {
 	}
 	//setters
 	
+	public Client() {
+		// TODO Auto-generated constructor stub
+		
+	}
+
 	public void setName(String setter) {
 		this.name = setter; 
 	}
