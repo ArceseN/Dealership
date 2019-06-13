@@ -10,6 +10,7 @@ public class Client {
 	
 	//TODO change to arrayList
 	private String carChoice; 
+	private String deptChoice;
 	
 	//constructor 
 	
@@ -19,6 +20,7 @@ public class Client {
 		this.phone = phone;
 		this.email = email;
 		this.carChoice = carChoice;
+		this.deptChoice = deptChoice;
 		
 	}
 	//setters
@@ -42,7 +44,9 @@ public class Client {
 	public void setCarChoice(String carChoice) {
 		this.carChoice = carChoice;
 	}	
-	
+	public void setdeptChoice(String deptChoice) {
+		this.deptChoice = deptChoice;
+	}	
 	//getters
 	
 	public String getName() {
@@ -64,8 +68,13 @@ public class Client {
 	public String getCarChoice() {
 		return carChoice;
 	}
-	
+
 	//TODO which service am I looking for
 
 	
+	public String getdeptChoice( ) {
+		return deptChoice;
+	}
+	
+		
 }
