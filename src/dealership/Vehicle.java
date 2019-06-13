@@ -103,10 +103,9 @@ public class Vehicle {
 	
 	public String getWheel() {
 		return this.wheel;
-	}
+	} 
      
-     
- 
+ //TODO System dot out car information
          
          
     }

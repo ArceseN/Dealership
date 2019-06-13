@@ -7,6 +7,8 @@ public class Client {
 	private String address;
 	private String phone; 
 	private String email;
+	
+	//TODO change to arrayList
 	private String carChoice; 
 	
 	//constructor 
@@ -62,6 +64,8 @@ public class Client {
 	public String getCarChoice() {
 		return carChoice;
 	}
+	
+	//TODO which service am I looking for
 
 	
 }
