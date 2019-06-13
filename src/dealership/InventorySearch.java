@@ -10,41 +10,56 @@ public class InventorySearch {
 	private ArrayList<Object> finalArray = new ArrayList<>();
 	private Object notFound = "not found";
 	
+	public void setNewArray(ArrayList<Object> setter) {
+		this.newArray = setter;
+	}
 	
-	public Object doSearch(String query) {
+	
+	public Object doSearch(ArrayList<Object> searchedArray, String query) {
 				
 	//iterator 
 	for (int i = 0; i < newArray.size(); i++) {		
-		if (newArray.get(i).toString().contains(query)) {
-			finalArray.add(newArray.get(i));
+		if (!searchedArray.get(i).toString().contains(query)) {
+			searchedArray.remove(searchedArray.get(i));
+			
 		}
 		
 	
 	}
-	if (finalArray.isEmpty()) {
+	if (searchedArray.isEmpty()) {
 		return notFound;
-	}
-	newArray = finalArray;
+	}	
 	
-	
-	return finalArray;
-	
-    
-	
+	return searchedArray;
+
 	}
 	
 	public ArrayList<Object> getFinalArray(){
-		return finalArray;
+		return this.finalArray;
 		
 	}
 	
+	public  ArrayList<Object> getNewArray(){
+		return newArray;
+	}
+	
 	public InventorySearch() {
+		
+		getNewArray();
+		
 	}
 
     public static void main(String[] args) {
     	
     InventorySearch newSearch = new InventorySearch();
-   System.out.print( newSearch.doSearch("Sedan"));
+    System.out.println(newSearch.doSearch(newSearch.getNewArray(), "Sedan"));  
+
+   
+   //searching through returned value
+   
+   
+   
+   
        
     	
     
