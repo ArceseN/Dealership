@@ -1,7 +1,7 @@
 
 package dealership;
  
-import java.util.*;
+//import java.util.*;
  
 public class Vehicle {
      
@@ -14,7 +14,7 @@ public class Vehicle {
     private String vin;
     private String tow;
     private String wheel;
-    private String w;
+   // private String w;
     
      
     public Vehicle () {

@@ -2,6 +2,8 @@
 package dealership;
  
 import java.util.*;
+
+import Dealership.Vehicle;
  
 public class inventory {
      

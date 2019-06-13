@@ -1,4 +1,4 @@
-package customerProfile;
+package dealership;
 
 
 public class Client {

@@ -1,4 +1,4 @@
-package apptProject;
+package dealership;
 
 import java.util.ArrayList;
 import java.util.Scanner;
