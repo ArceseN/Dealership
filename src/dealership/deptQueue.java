@@ -5,23 +5,32 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class deptQueue {
-	Scanner input = new Scanner(System.in);
-	String dqinfo = input.nextLine();
-	public void deptQueueAdd() {
-	Queue<String> sd = new LinkedList<String>();
-	Queue<String> fd = new LinkedList<String>();
-	Queue<String> ld = new LinkedList<String>();
+	private Queue<Client> sd = new LinkedList<Client>();
+	private Queue<Client> fd = new LinkedList<Client>();
+	private Queue<Client> ld = new LinkedList<Client>();
+	
+	
+	
+	//getter for sd
+	// getter for fd
+	//getter for ld 
+	
+	
+	//Scanner input = new Scanner(System.in);
+	//String dqinfo = input.nextLine();
+	public void deptQueueAdd(Client input) {
+
 	
 	System.out.println("Please enter the requested department: Sales, Finance, or Leasing");
 	
-	if (dqinfo == "Sales") {
-		sd.addAll(ClientInfo.personalInfo);
+	if (input.getdeptChoice() == "Sales") {
+		sd.add(input);
 	}
-	 if(dqinfo == "Finance") {		 
-	 	fd.addAll(ClientInfo.personalInfo);
+	 if(input.getdeptChoice()  == "Finance") {		 
+	 	fd.add(input);
 	 }
-	 if (dqinfo == "Leasing") {
-		ld.addAll(ClientInfo.personalInfo);
+	 if ( input.getdeptChoice()  == "Leasing") {
+		ld.add(input);
 	}
 	
   }
