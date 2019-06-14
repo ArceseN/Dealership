@@ -17,8 +17,17 @@ public class Vehicle {
    // private String w;
     
      
-    public Vehicle () {
-         
+    public Vehicle (String type, String make, String model, String year, String wholesaleCost , String retailCost , String vin , String tow, String wheel) {
+    	  this.type = type;
+    	   this.make = make;
+    	     this.model = make;
+    	   this.year = year; 
+    	    this.wholesaleCost = wholesaleCost;
+    	    this.retailCost = retailCost;
+    	    this.vin = vin ;
+    	    this.tow = tow;
+    	    this.wheel = wheel; 
+   
     }
      
     //setters

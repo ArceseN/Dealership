@@ -1,5 +1,6 @@
 package dealership;
 
+import java.util.ArrayList;
 
 public class Client {
 	
@@ -9,17 +10,17 @@ public class Client {
 	private String email;
 	
 	//TODO change to arrayList
-	private String carChoice; 
+	
+	private ArrayList <Vehicle> ListofVehicles;
 	private String deptChoice;
 	
 	//constructor 
 	
-	public Client(String name, String address, String phone, String email, String carChoice, String deptChoice) {
+	public Client(String name, String address, String phone, String email, String deptChoice) {
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
 		this.email = email;
-		this.carChoice = carChoice;
 		this.deptChoice = deptChoice;
 		
 	}
@@ -79,6 +80,19 @@ public class Client {
 	
 	public String getdeptChoice( ) {
 		return deptChoice;
+	}
+
+	public ArrayList <Vehicle> getListofVehicles() {
+		return ListofVehicles;
+	}
+
+	public void setListofVehicles(ArrayList <Vehicle> listofVehicles) {
+		ListofVehicles = listofVehicles;
+	}
+	
+	public void addVehicleToListofVehicles(Vehicle car) {
+		
+		this.ListofVehicles.add(car);
 	}
 	
 		
