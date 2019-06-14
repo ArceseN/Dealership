@@ -47,9 +47,7 @@ public class Client {
 		this.email = email;	
 	}
 	
-	public void setCarChoice(String carChoice) {
-		this.carChoice = carChoice;
-	}	
+	
 	public void setdeptChoice(String deptChoice) {
 		this.deptChoice = deptChoice;
 	}	
@@ -71,9 +69,9 @@ public class Client {
 		return email;
 	}
 
-	public String getCarChoice() {
-		return carChoice;
-	}
+//	public String getCarChoice() {
+//		return carChoice;
+//	}
 
 	//TODO which service am I looking for
 
