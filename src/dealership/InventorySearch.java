@@ -48,27 +48,29 @@ public class InventorySearch {
 		
 	}
 
-    public static void main(String[] args) {
-    	
-    //initialize new instance and print search
-    	
-    InventorySearch newSearch = new InventorySearch();
-    System.out.println(newSearch.doSearch(newSearch.getNewArray(), "Sedan"));  
-
-   
-   //TODO: searching through returned value
-   
-   
-   
-   
-       
-    	
-    
-    
+	
+	// Remove main when done testing
+//    public static void main(String[] args) {
+//    	
+//    //initialize new instance and print search
+//    	
+//    InventorySearch newSearch = new InventorySearch();
+//    System.out.println(newSearch.doSearch(newSearch.getNewArray(), "Sedan"));  
+//
+//   
+//   //TODO: searching through returned value
+//   
+//   
+//   
+//   
+//       
+//    	
+//    
+//    
     	
     }	
 
-}
+//}
 	
 	
 
