@@ -48,10 +48,10 @@ public class CustomerInformation {
 		 return newPerson; 
 	 }
 	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println(showFrontdeskmenu().getName());
+//   NOTE: Remove main if done with testing
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		System.out.println(showFrontdeskmenu().getName());
  
    
      
@@ -63,7 +63,7 @@ public class CustomerInformation {
    // }
 
 	}
- }
+ //}
 
 
 

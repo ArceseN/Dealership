@@ -17,8 +17,11 @@ public class user1Main {
 	
     public static void main(String[] args) {
     	
+    	showFrontdeskmenu();
+    	InventorySearch();
     	
-    	if (newMain.Client.getdeptChoice().contentEquals(sb))
+    	// Purpose of this if statement?
+    	//if (newMain.Client.getdeptChoice().contentEquals(sb))
     	
     	//sales queue
     	
@@ -26,7 +29,17 @@ public class user1Main {
     	
     	//leasing queue	
     	
-    }	
+    }
+
+	private static void InventorySearch() {
+	
+		
+	}
+
+	private static void showFrontdeskmenu() {
+	
+		
+	}	
 
 	
 	
